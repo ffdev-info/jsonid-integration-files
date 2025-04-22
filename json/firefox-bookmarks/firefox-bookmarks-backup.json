@@ -1,0 +1,144 @@
+{
+  "guid": "root________",
+  "title": "",
+  "index": 0,
+  "dateAdded": 1685475223677000,
+  "lastModified": 1745252042033000,
+  "id": 1,
+  "typeCode": 2,
+  "type": "text/x-moz-place-container",
+  "root": "placesRoot",
+  "children": [
+    {
+      "guid": "menu________",
+      "title": "menu",
+      "index": 0,
+      "dateAdded": 1685475223677000,
+      "lastModified": 1745252042033000,
+      "id": 2,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "bookmarksMenuFolder",
+      "children": [
+        {
+          "guid": "VwJDGmqyrvXw",
+          "title": "Mozilla Firefox",
+          "index": 0,
+          "dateAdded": 1685475223924000,
+          "lastModified": 1685475223924000,
+          "id": 7,
+          "typeCode": 2,
+          "type": "text/x-moz-place-container",
+          "children": [
+            {
+              "guid": "lmK6Q2ADzgjq",
+              "title": "Get Help",
+              "index": 0,
+              "dateAdded": 1685475223924000,
+              "lastModified": 1685475223924000,
+              "id": 8,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://support.mozilla.org/products/firefox",
+              "type": "text/x-moz-place",
+              "uri": "https://support.mozilla.org/products/firefox"
+            },
+            {
+              "guid": "NTezpmKb97kg",
+              "title": "Customize Firefox",
+              "index": 1,
+              "dateAdded": 1685475223924000,
+              "lastModified": 1685475223924000,
+              "id": 9,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize",
+              "type": "text/x-moz-place",
+              "uri": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+            },
+            {
+              "guid": "jde5hsvUAesp",
+              "title": "Get Involved",
+              "index": 2,
+              "dateAdded": 1685475223924000,
+              "lastModified": 1685475223924000,
+              "id": 10,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.mozilla.org/contribute/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.mozilla.org/contribute/"
+            },
+            {
+              "guid": "NJRcSlF-jm2h",
+              "title": "About Us",
+              "index": 3,
+              "dateAdded": 1685475223924000,
+              "lastModified": 1685475223924000,
+              "id": 11,
+              "typeCode": 1,
+              "iconUri": "fake-favicon-uri:https://www.mozilla.org/about/",
+              "type": "text/x-moz-place",
+              "uri": "https://www.mozilla.org/about/"
+            }
+          ]
+        },
+        {
+          "guid": "SaJRhwfn2kLA",
+          "title": "Example Domain",
+          "index": 1,
+          "dateAdded": 1745252042033000,
+          "lastModified": 1745252042033000,
+          "id": 14,
+          "typeCode": 1,
+          "type": "text/x-moz-place",
+          "uri": "https://example.com/"
+        }
+      ]
+    },
+    {
+      "guid": "toolbar_____",
+      "title": "toolbar",
+      "index": 1,
+      "dateAdded": 1685475223677000,
+      "lastModified": 1734012611309000,
+      "id": 3,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "toolbarFolder",
+      "children": [
+        {
+          "guid": "QQkL89xZAvBo",
+          "title": "Router",
+          "index": 0,
+          "dateAdded": 1734012606570000,
+          "lastModified": 1734012606570000,
+          "id": 13,
+          "typeCode": 1,
+          "iconUri": "http://192.168.0.1/skins/vod/css/favicon.png",
+          "type": "text/x-moz-place",
+          "uri": "http://192.168.0.1/"
+        }
+      ]
+    },
+    {
+      "guid": "unfiled_____",
+      "title": "unfiled",
+      "index": 3,
+      "dateAdded": 1685475223677000,
+      "lastModified": 1685475223917000,
+      "id": 5,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "unfiledBookmarksFolder"
+    },
+    {
+      "guid": "mobile______",
+      "title": "mobile",
+      "index": 4,
+      "dateAdded": 1685475223682000,
+      "lastModified": 1685475223917000,
+      "id": 6,
+      "typeCode": 2,
+      "type": "text/x-moz-place-container",
+      "root": "mobileFolder"
+    }
+  ]
+}

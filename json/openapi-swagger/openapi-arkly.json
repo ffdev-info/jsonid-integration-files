@@ -1,0 +1,748 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "api.arkly.io",
+    "description": " ",
+    "contact": {
+      "": ""
+    },
+    "version": "2024.6.12.2"
+  },
+  "paths": {
+    "/retrieve_wallet_address/": {
+      "post": {
+        "tags": [
+          "arweave wallet"
+        ],
+        "summary": "Retrieve Wallet Address From Keyfile",
+        "description": "Retrieve a wallet address from an Arweave wallet keyfile.",
+        "operationId": "retrieve_wallet_address_from_keyfile_retrieve_wallet_address__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_retrieve_wallet_address_from_keyfile_retrieve_wallet_address__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/check_wallet_balance/": {
+      "get": {
+        "tags": [
+          "arweave wallet"
+        ],
+        "summary": "Check Wallet Balance",
+        "description": "Allows a user to check the balance of a given wallet address.\n\nBalance is reported in Ar with a Winstons field also provided\nto the caller.\n\nExample wallet address: `6KymaAPWd3JNyMT0B7EPYij4TWxehhMrzRD8qifCSLs`",
+        "operationId": "check_wallet_balance_check_wallet_balance__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Wallet Address"
+            },
+            "name": "wallet_address",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "arweave wallet"
+        ],
+        "summary": "Check Wallet Balance With Keyfile",
+        "description": "Allows a user to check the balance of their wallet using an\nArweave wallet keyfile.",
+        "operationId": "check_wallet_balance_with_keyfile_check_wallet_balance__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_check_wallet_balance_with_keyfile_check_wallet_balance__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/check_wallet_last_transaction/": {
+      "get": {
+        "tags": [
+          "arweave wallet"
+        ],
+        "summary": "Check Wallet Last Transaction",
+        "description": "Allows a user to check the transaction ID of their last\ntransaction using a given wallet address.\n\nExample wallet address: `6KymaAPWd3JNyMT0B7EPYij4TWxehhMrzRD8qifCSLs`",
+        "operationId": "check_wallet_last_transaction_check_wallet_last_transaction__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Wallet Address"
+            },
+            "name": "wallet_address",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "arweave wallet"
+        ],
+        "summary": "Check Wallet Last Transaction With Keyfile",
+        "description": "Allows a user to check the transaction ID of their last\ntransaction using an Arweave wallet keyfile.",
+        "operationId": "check_wallet_last_transaction_with_keyfile_check_wallet_last_transaction__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_check_wallet_last_transaction_with_keyfile_check_wallet_last_transaction__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/estimate_transaction_cost/": {
+      "get": {
+        "tags": [
+          "arweave"
+        ],
+        "summary": "Estimate Transaction Cost",
+        "description": "Allows a user to get an estimate of how much a transaction may\ncost.",
+        "operationId": "estimate_transaction_cost_estimate_transaction_cost__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Size In Bytes"
+            },
+            "name": "size_in_bytes",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/check_transaction_status/": {
+      "get": {
+        "tags": [
+          "arweave"
+        ],
+        "summary": "Check Transaction Status",
+        "description": "Allows a user to check the transaction id of their last\ntransaction.\n\nExample Tx: `rYa3ILXqWi_V52xPoG70y2EupPsTtu4MsMmz6DI4fy4`",
+        "operationId": "check_transaction_status_check_transaction_status__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Transaction Id"
+            },
+            "name": "transaction_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/fetch_transaction/": {
+      "get": {
+        "tags": [
+          "arweave"
+        ],
+        "summary": "Fetch Transaction",
+        "description": "Allows a user to read their transaction files from the Arweave\nblockchain.\n\nExample Tx: `rYa3ILXqWi_V52xPoG70y2EupPsTtu4MsMmz6DI4fy4`",
+        "operationId": "fetch_transaction_fetch_transaction__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Transaction Id"
+            },
+            "name": "transaction_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/fetch_transaction_metadata/": {
+      "get": {
+        "tags": [
+          "arweave"
+        ],
+        "summary": "Fetch Transaction Metadata",
+        "description": "Fetch metadata from a given transaction ID to provide further\ninformation about the uploaded package.\n\nExample Tx: `rYa3ILXqWi_V52xPoG70y2EupPsTtu4MsMmz6DI4fy4`",
+        "operationId": "fetch_transaction_metadata_fetch_transaction_metadata__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Transaction Id"
+            },
+            "name": "transaction_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/all_wallet_transactions/": {
+      "get": {
+        "tags": [
+          "arweave search"
+        ],
+        "summary": "Get All Wallet Transactions",
+        "description": "Allows a user to see a list of all transactions with a given\nwallet.\n\nExample wallet: `6KymaAPWd3JNyMT0B7EPYij4TWxehhMrzRD8qifCSLs`",
+        "operationId": "get_all_wallet_transactions_all_wallet_transactions__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Wallet Addr"
+            },
+            "name": "wallet_addr",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/transactions_by_tag_pair/": {
+      "get": {
+        "tags": [
+          "arweave search"
+        ],
+        "summary": "Get Transactions By Tag Pair",
+        "description": "Allows a user to retrieve transactions by tag-pair.\n\nExample tag key: `x-tag`\nExample tag value: `arkly hello world!`",
+        "operationId": "get_transactions_by_tag_pair_transactions_by_tag_pair__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            },
+            "name": "name",
+            "in": "query"
+          },
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Value"
+            },
+            "name": "value",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/create_transaction/": {
+      "post": {
+        "tags": [
+          "arkly"
+        ],
+        "summary": "Create Transaction",
+        "description": "Create an Arkly package and Arweave transaction.",
+        "operationId": "create_transaction_create_transaction__post",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Package File Name"
+            },
+            "name": "package_file_name",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_create_transaction_create_transaction__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/validate_arkly_bag/": {
+      "get": {
+        "tags": [
+          "arkly"
+        ],
+        "summary": "Validate Bag",
+        "description": "Given an Arweave transaction ID, Validate an Arkly link as a bag.\n\nExample Tx: `rYa3ILXqWi_V52xPoG70y2EupPsTtu4MsMmz6DI4fy4`",
+        "operationId": "validate_bag_validate_arkly_bag__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Transaction Id"
+            },
+            "name": "transaction_id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_version/": {
+      "get": {
+        "tags": [
+          "maintenance"
+        ],
+        "summary": "Get Version Info",
+        "description": "Return API version information to the caller.",
+        "operationId": "get_version_info_get_version__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_check_wallet_balance_with_keyfile_check_wallet_balance__post": {
+        "properties": {
+          "wallet": {
+            "type": "string",
+            "format": "binary",
+            "title": "Wallet"
+          }
+        },
+        "type": "object",
+        "required": [
+          "wallet"
+        ],
+        "title": "Body_check_wallet_balance_with_keyfile_check_wallet_balance__post"
+      },
+      "Body_check_wallet_last_transaction_with_keyfile_check_wallet_last_transaction__post": {
+        "properties": {
+          "wallet": {
+            "type": "string",
+            "format": "binary",
+            "title": "Wallet"
+          }
+        },
+        "type": "object",
+        "required": [
+          "wallet"
+        ],
+        "title": "Body_check_wallet_last_transaction_with_keyfile_check_wallet_last_transaction__post"
+      },
+      "Body_create_transaction_create_transaction__post": {
+        "properties": {
+          "wallet": {
+            "type": "string",
+            "format": "binary",
+            "title": "Wallet"
+          },
+          "files": {
+            "items": {
+              "type": "string",
+              "format": "binary"
+            },
+            "type": "array",
+            "title": "Files"
+          },
+          "tags": {
+            "$ref": "#/components/schemas/Tags"
+          }
+        },
+        "type": "object",
+        "required": [
+          "wallet",
+          "files"
+        ],
+        "title": "Body_create_transaction_create_transaction__post"
+      },
+      "Body_retrieve_wallet_address_from_keyfile_retrieve_wallet_address__post": {
+        "properties": {
+          "wallet": {
+            "type": "string",
+            "format": "binary",
+            "title": "Wallet"
+          }
+        },
+        "type": "object",
+        "required": [
+          "wallet"
+        ],
+        "title": "Body_retrieve_wallet_address_from_keyfile_retrieve_wallet_address__post"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Tag": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "value"
+        ],
+        "title": "Tag",
+        "description": "Describes the structure of a single tag for upload to Arweave. A\ntag is simply a HTTP header and consists of a name and value.\n\nE.g. Name = `Content-type`, value = `application/gzip`\n    becomes `\"Content-type: application/gzip\"`."
+      },
+      "Tags": {
+        "properties": {
+          "tags": {
+            "items": {
+              "$ref": "#/components/schemas/Tag"
+            },
+            "type": "array",
+            "title": "Tags",
+            "default": []
+          }
+        },
+        "type": "object",
+        "title": "Tags",
+        "description": "Tags is an extensible data-type that allows users to provide\nzero-to-many tags to supply to Airweave.\n\nTo provide a value, provide a JSON object that looks something like\nas follows:\n\n```json\n{\n    \"tags\": [\n        {\n        \"name\": \"tag_name_1\",\n        \"value\": \"tag_value_1\"\n        },\n        {\n        \"name\": \"tag_name_2\",\n        \"value\": \"tag_value_2\"\n        },\n        {\n        \"name\": \"tag_name_3\",\n        \"value\": \"tag_value_3\"\n        }\n    ]\n}\n```"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "arweave",
+      "description": "Manage Arweave transactions"
+    },
+    {
+      "name": "arweave wallet",
+      "description": "Manage Arweave wallets"
+    },
+    {
+      "name": "arweave search",
+      "description": "Search for Arweave transactions"
+    },
+    {
+      "name": "arkly",
+      "description": "Arkly functions on-top of Arweave"
+    }
+  ]
+}

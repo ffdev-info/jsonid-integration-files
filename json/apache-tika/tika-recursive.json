@@ -1,0 +1,10 @@
+[ {
+  "Content-Length" : "18768",
+  "Content-Type" : "application/vnd.lotus-1-2-3; version=97+9.x",
+  "X-TIKA:Parsed-By" : "org.apache.tika.parser.EmptyParser",
+  "X-TIKA:Parsed-By-Full-Set" : "org.apache.tika.parser.EmptyParser",
+  "X-TIKA:digest:MD5" : "733a6a9a2b1253203b1b99378e794b6f",
+  "X-TIKA:digest:SHA256" : "afc955fcb7e00614a4f89ff9066def28662a6583ca6fc5df59d286ca447c6c6e",
+  "X-TIKA:embedded_depth" : "0",
+  "X-TIKA:parse_time_millis" : "5"
+} ]

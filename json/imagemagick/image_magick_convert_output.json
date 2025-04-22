@@ -1,0 +1,115 @@
+[
+    {
+        "version": "1.0",
+        "image": {
+            "name": "static/images/JSON_logo-crockford.png",
+            "permissions": 664,
+            "format": "PNG",
+            "formatDescription": "Portable Network Graphics",
+            "mimeType": "image/png",
+            "class": "DirectClass",
+            "geometry": {
+                "width": 1076,
+                "height": 1052,
+                "x": 0,
+                "y": 0
+            },
+            "resolution": {
+                "x": 118.11,
+                "y": 118.11
+            },
+            "printSize": {
+                "x": 9.11015,
+                "y": 8.90695
+            },
+            "units": "PixelsPerCentimeter",
+            "type": "GrayscaleAlpha",
+            "endianness": "Undefined",
+            "colorspace": "Gray",
+            "depth": 8,
+            "baseDepth": 8,
+            "channelDepth": {
+                "alpha": 1,
+                "gray": 8
+            },
+            "pixels": 1131952,
+            "channelStatistics": {
+                "alpha": {
+                    "min": 255,
+                    "max": 0,
+                    "mean": 89.7469,
+                    "standardDeviation": 121.782,
+                    "kurtosis": -1.61559,
+                    "skewness": -0.620008,
+                    "entropy": 0.935796
+                },
+                "gray": {
+                    "min": 0,
+                    "max": 255,
+                    "mean": 138.901,
+                    "standardDeviation": 80.5287,
+                    "kurtosis": -1.58598,
+                    "skewness": -0.120706,
+                    "entropy": 0.709949
+                }
+            },
+            "alpha": "#DCDCDC00",
+            "renderingIntent": "Undefined",
+            "gamma": 0.454545,
+            "backgroundColor": "#1A1A1AFF",
+            "borderColor": "#DFDFDFFF",
+            "matteColor": "#BDBDBDFF",
+            "transparentColor": "#00000000",
+            "interlace": "None",
+            "intensity": "Undefined",
+            "compose": "Over",
+            "pageGeometry": {
+                "width": 1076,
+                "height": 1052,
+                "x": 0,
+                "y": 0
+            },
+            "dispose": "Undefined",
+            "iterations": 0,
+            "compression": "Zip",
+            "orientation": "Undefined",
+            "properties": {
+                "Comment": "Created with GIMP",
+                "date:create": "2025-04-13T21:22:56+00:00",
+                "date:modify": "2025-04-13T21:22:56+00:00",
+                "date:timestamp": "2025-05-04T12:52:55+00:00",
+                "icc:copyright": "Public Domain",
+                "icc:description": "GIMP built-in D65 Grayscale with sRGB TRC",
+                "icc:manufacturer": "GIMP",
+                "icc:model": "D65 Grayscale with sRGB TRC",
+                "png:bKGD": "chunk was found (see Background color, above)",
+                "png:iCCP": "chunk was found",
+                "png:IHDR.bit-depth-orig": "8",
+                "png:IHDR.bit_depth": "8",
+                "png:IHDR.color-type-orig": "4",
+                "png:IHDR.color_type": "4 (GrayAlpha)",
+                "png:IHDR.interlace_method": "0 (Not interlaced)",
+                "png:IHDR.width,height": "1076, 1052",
+                "png:pHYs": "x_res=11811, y_res=11811, units=1",
+                "png:text": "1 tEXt/zTXt/iTXt chunks were found",
+                "png:tIME": "2025-04-13T21:22:55Z",
+                "signature": "354520c0c68f2980688fb4420c898110fd66484258d6e6775cdc022f5e8b868b"
+            },
+            "profiles": {
+                "icc": {
+                    "length": 544
+                }
+            },
+            "artifacts": {
+                "filename": "static/images/JSON_logo-crockford.png"
+            },
+            "tainted": false,
+            "filesize": "60174B",
+            "numberPixels": "1.13195M",
+            "pixelsPerSecond": "75.1801MB",
+            "userTime": "0.010u",
+            "elapsedTime": "0:01.015",
+            "version": "ImageMagick 6.9.12-98 Q16 x86_64 18038 https://legacy.imagemagick.org"
+        }
+    }
+]

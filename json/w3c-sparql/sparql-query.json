@@ -1,0 +1,24 @@
+{
+  "head": {
+    "vars": [
+      "s",
+      "label"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "s": {
+          "type": "uri",
+          "value": "http://the-fr.org/id/file-format/25"
+        },
+
+        "label": {
+          "type": "literal",
+          "value": "OS\/2 Bitmap",
+          "xml:lang": "en"
+        }
+      }
+    ]
+  }
+}

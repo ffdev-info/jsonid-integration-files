@@ -1,0 +1,30 @@
+{
+  "commit": "d25acc3bc774e0c1ed97e8e3af21670f7baf2cf5",
+  "pagesAndArtboards": {
+    "79E06625-9541-4F0D-AC81-55DE361FB569": {
+      "name": "Page 1",
+      "artboards": {}
+    }
+  },
+  "version": 144,
+  "compatibilityVersion": 99,
+  "app": "com.bohemiancoding.sketch3.experimental",
+  "autosaved": 0,
+  "variant": "EXPERIMENTAL",
+  "coeditCompatibilityVersion": 143,
+  "created": {
+    "commit": "d25acc3bc774e0c1ed97e8e3af21670f7baf2cf5",
+    "appVersion": "91",
+    "build": 150531,
+    "app": "com.bohemiancoding.sketch3.experimental",
+    "coeditCompatibilityVersion": 143,
+    "compatibilityVersion": 99,
+    "version": 144,
+    "variant": "EXPERIMENTAL"
+  },
+  "saveHistory": [
+    "EXPERIMENTAL.150531"
+  ],
+  "appVersion": "91",
+  "build": 150531
+}

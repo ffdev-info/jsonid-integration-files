@@ -1,0 +1,10 @@
+{
+  "csvddf_version": 1.0,
+  "dialect": {
+    "delimiter": ",",
+    "doublequote": false,
+    "lineterminator": "\r\n",
+    "quotechar": "\"",
+    "skipinitialspace": false
+  }
+}

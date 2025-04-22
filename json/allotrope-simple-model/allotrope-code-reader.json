@@ -1,0 +1,8 @@
+{
+    "$asm.manifest": "http://purl.allotrope.org/manifests/code-reader/REC/2022/06/code-reader.manifest",
+    "code scan result": "S-20220321-01017",
+    "control command": "Read Code",
+    "device response signal": "OK",
+    "calibration time": "2022-03-09T12:03:54.007Z",
+    "measurement time": "2022-06-21T06:33:54.007Z"
+}

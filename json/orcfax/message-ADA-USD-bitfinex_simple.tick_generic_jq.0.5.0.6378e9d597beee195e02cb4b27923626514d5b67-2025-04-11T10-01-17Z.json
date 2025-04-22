@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "type": "Message",
+  "name": "ADA-USD",
+  "isBasedOn": {
+    "@type": "MediaObject",
+    "name": "Exchange data",
+    "additionalType": "Central Exchange Data",
+    "description": "the raw information received by an Orcfax collector from a central exchange (CEX) API"
+  },
+  "sender": "https://api-pub.bitfinex.com/v2/tickers?symbols=tADAUSD",
+  "recipient": "bitfinex_simple.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67",
+  "identifier": "urn:orcfax:7a6d8967-09ed-49de-bf94-c22d1b4db065",
+  "dateReceived": "2025-04-11T10:01:17Z",
+  "messageAttachment": {
+    "encoding": "application/json;base64",
+    "text": "eyJyZXF1ZXN0X3VybCI6ICJodHRwczovL2FwaS1wdWIuYml0ZmluZXguY29tL3YyL3RpY2tlcnM/c3ltYm9scz10QURBVVNEIiwgInJlc3BvbnNlIjogeyJib2R5IjogeyJkYXRhIjogW1sidEFEQVVTRCIsIDAuNjMwNTcsIDE5MTE3OS4zMjk4NDEyOSwgMC42MzA4OCwgMTE4MDE3LjkxMTI0NTIzLCAwLjAxMDc0LCAwLjAxNzI2ODgyLCAwLjYzMjY3LCAzOTI1MDI2LjQxMDc2MTczLCAwLjYzNjI4LCAwLjU4NjAzXV19LCAiaGVhZGVycyI6IHsiQWdlIjogWyIxIl0sICJDZi1DYWNoZS1TdGF0dXMiOiBbIkhJVCJdLCAiQ2YtUmF5IjogWyI5MmU5YTQ0NzBlZTVhOTNkLVNZRCJdLCAiQ29udGVudC1UeXBlIjogWyJhcHBsaWNhdGlvbi9qc29uOyBjaGFyc2V0PXV0Zi04Il0sICJEYXRlIjogWyJGcmksIDExIEFwciAyMDI1IDEwOjAxOjE2IEdNVCJdLCAiTGFzdC1Nb2RpZmllZCI6IFsiRnJpLCAxMSBBcHIgMjAyNSAxMDowMToxNSBHTVQiXSwgIlJlZmVycmVyLVBvbGljeSI6IFsic2FtZS1vcmlnaW4iXSwgIlNlcnZlciI6IFsiY2xvdWRmbGFyZSJdLCAiU3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eSI6IFsibWF4LWFnZT0zMTUzNjAwMDsgaW5jbHVkZVN1YmRvbWFpbnM7Il0sICJWYXJ5IjogWyJBY2NlcHQtRW5jb2RpbmciXSwgIlgtQ29udGVudC1UeXBlLU9wdGlvbnMiOiBbIm5vc25pZmYiXSwgIlgtRG93bmxvYWQtT3B0aW9ucyI6IFsibm9vcGVuIl0sICJYLUZyYW1lLU9wdGlvbnMiOiBbInNhbWVvcmlnaW4iXSwgIlgtUGVybWl0dGVkLUNyb3NzLURvbWFpbi1Qb2xpY2llcyI6IFsibm9uZSJdLCAiWC1Yc3MtUHJvdGVjdGlvbiI6IFsiMTsgbW9kZT1ibG9jayJdfX19"
+  }
+}

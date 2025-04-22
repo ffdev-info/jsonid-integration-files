@@ -1,0 +1,117 @@
+{
+    "jhove": {
+      "name": "JhoveView",
+      "release": "1.25.0-SNAPSHOT",
+      "date": "2021-04-07",
+      "executionTime": "2021-04-08T09:50:13+02:00",
+      "repInfo": [
+        {
+          "uri": "/tmp/opf/Summary.pdf",
+          "reportingModule": {
+            "name": "PDF-hul",
+            "release": "1.12.2",
+            "date": "2019-12-10"
+          },
+          "lastModified": "2021-04-08T00:05:16+02:00",
+          "size": 132877,
+          "format": "PDF",
+          "version": "1.4",
+          "status": "Not well-formed",
+          "sigMatch": [
+            "PDF-hul"
+          ],
+          "messages": [
+            {
+              "message": "Unexpected exception java.lang.NullPointerException",
+              "severity": "error",
+              "id": "PDF-HUL-94"
+            }
+          ],
+          "mimeType": "application/pdf",
+          "properties": [
+            {
+              "PDFMetadata": [
+                {
+                  "Objects": 38
+                },
+                {
+                  "FreeObjects": 3
+                },
+                {
+                  "IncrementalUpdates": 2
+                },
+                {
+                  "DocumentCatalog": [
+                    {
+                      "PageLayout": "SinglePage"
+                    },
+                    {
+                      "PageMode": "UseNone"
+                    }
+                  ]
+                },
+                {
+                  "Info": [
+                    {
+                      "Title": "DocuSign-Zertifikat"
+                    },
+                    {
+                      "Author": ""
+                    },
+                    {
+                      "Subject": "DocuSign-Zertifikat"
+                    }
+                  ]
+                },
+                {
+                  "ID": [
+                    "0x35663464323637302d633562612d346261622d623964322d636163386437306164313131",
+                    "0x9d91f58b1574d3a15937b1cd2b36d684"
+                  ]
+                },
+                {
+                  "XMP": "<x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"Adobe XMP Core 5.1.0-jc003\">\n  <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n    <rdf:Description rdf:about=\"\"\n        xmlns:pdf=\"http://ns.adobe.com/pdf/1.3/\"\n        xmlns:xmp=\"http://ns.adobe.com/xap/1.0/\"\n        xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n      pdf:Producer=\"PDFKit.NET 21.1.102.20091\"\n      pdf:Keywords=\"\"\n      pdf:PDFVersion=\"1.4\"\n      xmp:CreateDate=\"2021-04-08T00:05:16-07:00\"\n      xmp:ModifyDate=\"2021-04-08T00:05:16-07:00\"\n      xmp:CreatorTool=\"\"\n      xmp:MetadataDate=\"2021-04-08T00:05:16-07:00\"\n      dc:format=\"application/pdf\">\n      <dc:creator>\n        <rdf:Seq>\n          <rdf:li/>\n        </rdf:Seq>\n      </dc:creator>\n      <dc:subject>\n        <rdf:Bag/>\n      </dc:subject>\n      <dc:description>\n        <rdf:Alt>\n          <rdf:li xml:lang=\"x-default\">DocuSign-Zertifikat</rdf:li>\n        </rdf:Alt>\n      </dc:description>\n      <dc:title>\n        <rdf:Alt>\n          <rdf:li xml:lang=\"x-default\">DocuSign-Zertifikat</rdf:li>\n        </rdf:Alt>\n      </dc:title>\n    </rdf:Description>\n  </rdf:RDF>\n</x:xmpmeta>"
+                },
+                {
+                  "Pages": [
+                    {
+                      "Page": [
+                        {
+                          "Sequence": 1
+                        },
+                        {
+                          "Annotations": [
+                            {
+                              "Annotation": [
+                                {
+                                  "Subtype": "Widget"
+                                },
+                                {
+                                  "Rect": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                  ]
+                                },
+                                {
+                                  "Flags": 132
+                                },
+                                {
+                                  "AppearanceDictionary": true
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }

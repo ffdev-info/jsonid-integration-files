@@ -1,0 +1,10 @@
+{"version": 3, "term": {"cols": 80, "rows": 24, "type": "xterm-256color"}, "timestamp": 1504467315, "title": "Demo", "env": {"TERM": "xterm-256color", "SHELL": "/bin/zsh"}}
+# event stream follows the header
+[0.248848, "o", "\u001b[1;31mHello \u001b[32mWorld!\u001b[0m\n"]
+[1.001376, "o", "That was ok\rThis is better."]
+[3.500000, "m", ""]
+[0.143733, "o", "Now... "]
+# terminal window resized to 90 cols and 30 rows
+[2.050000, "r", "90x30"]
+[1.541828, "o", "Bye!"]
+[0.8870, "x", "0"]

@@ -1,0 +1,629 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Table of content:\n",
+    "1. [Imports](#1.-Imports)  \n",
+    "2. [Load the dataset](#2.-Load-the-dataset)  \n",
+    "3. [Basic usage](#3.-Basic-usage)   \n",
+    "    3.1. [Display images list](#3.1-Display-images-list)  \n",
+    "    3.2. [Display class representations](#3.2-Display-class-representations)  \n",
+    "    3.3. [Display images in class tabs layout](#3.3-Display-images-in-class-tabs-layout)  \n",
+    "4. [Different sequence and data types](#4.-Different-sequence-and-data-types)  \n",
+    "    4.1. [Sequence types](#4.1-Sequence-types)  \n",
+    "    4.2. [Image types](#4.2-Image-types)  \n",
+    "5. [Order, filter, ignore labels](#5.-Order,-filter,-ignore-labels)  \n",
+    "    5.1. [Ordering](#5.1-Ordering)  \n",
+    "    5.2. [Filtering](#5.2-Filtering)  \n",
+    "    5.3. [Ignoring labels](#5.3-Ignoring-labels)   \n",
+    "6. [Additional plotting options](#6.-Additional-plotting-options)  \n",
+    "    6.1. [Hiding image URLs](#6.1-Hiding-image-URLs)  \n",
+    "7. [Force convert images to base64 strings](#7.-Force-convert-images-to-base64-strings)  "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 1. Imports\n",
+    "[[back to the top](#Table-of-content:)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:37:54.551532Z",
+     "start_time": "2020-10-20T19:37:54.475232Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "%load_ext autoreload\n",
+    "%autoreload 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:37:54.878197Z",
+     "start_time": "2020-10-20T19:37:54.554841Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "import sys\n",
+    "try:\n",
+    "    sys.path.append('../')\n",
+    "    import ipyplot\n",
+    "except:\n",
+    "    ! {sys.executable} -m pip install ipyplot\n",
+    "    import ipyplot"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:37:54.990587Z",
+     "start_time": "2020-10-20T19:37:54.881599Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "import glob\n",
+    "import os\n",
+    "import urllib.request\n",
+    "import zipfile"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 2. Load the dataset\n",
+    "[[back to the top](#Table-of-content:)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:37:55.191374Z",
+     "start_time": "2020-10-20T19:37:55.002104Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "datasets_dir = '../datasets/'\n",
+    "zip_filename = 'gear_images.zip'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:09.162618Z",
+     "start_time": "2020-10-20T19:37:55.200372Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "print('Downloading the data into `datasets` folder..')\n",
+    "url = 'https://privdatastorage.blob.core.windows.net/github/ipyplot/gear_images.zip?sp=r&st=2022-03-15T07:56:45Z&se=2030-03-15T15:56:45Z&spr=https&sv=2020-08-04&sr=b&sig=%2BywohgAXA2E02DSVghZzHudlyvmM9kFRDydAfwtC9g8%3D'\n",
+    "urllib.request.urlretrieve(url, datasets_dir + zip_filename)\n",
+    "print(\"Done!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:10.866286Z",
+     "start_time": "2020-10-20T19:38:09.170566Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "with zipfile.ZipFile(datasets_dir + zip_filename, 'r') as zip_ref:\n",
+    "    os.makedirs(datasets_dir, exist_ok=True)\n",
+    "    zip_ref.extractall(datasets_dir)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.069937Z",
+     "start_time": "2020-10-20T19:38:10.871004Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "images = glob.glob(datasets_dir + 'gear_images' + '/**/*.*')\n",
+    "images = [image.replace('\\\\', '/') for image in images]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.163494Z",
+     "start_time": "2020-10-20T19:38:11.075409Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "labels = [image.split('/')[-2] for image in images]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 3. Basic usage\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "## 3.1 Display images list\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Displays images based on provided list.  \n",
+    "max_images param limits the number of displayed images (takes top n images only)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.226414Z",
+     "start_time": "2020-10-20T19:38:11.165605Z"
+    },
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_images(images, max_images=10, img_width=150)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 3.2 Display class representations\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Displays first image for each class/label"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.318696Z",
+     "start_time": "2020-10-20T19:38:11.228450Z"
+    },
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_representations(images, labels, img_width=150)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 3.3 Display images in class tabs layout\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Displays top N images (max_imgs_per_tab) in separate tab for each label/class (based on provided labels list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.428142Z",
+     "start_time": "2020-10-20T19:38:11.324448Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_tabs(images, labels, max_imgs_per_tab=10, img_width=150)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#  4. Different sequence and data types  \n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "## 4.1 Sequence types   \n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "\n",
+    "IPyPlot currently support most common sequence types in python including:\n",
+    "- list\n",
+    "- numpy.ndarray\n",
+    "- pandas.Series\n",
+    "\n",
+    "In previous examples we were using `images` object to store our images which was of simple python type `list`.\n",
+    "Now let's try using different sequence types.\n",
+    "\n",
+    "### Using numpy.ndarray as images sequence"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:11.506705Z",
+     "start_time": "2020-10-20T19:38:11.430737Z"
+    },
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "images_np = np.asarray(images)\n",
+    "\n",
+    "ipyplot.plot_images(images_np, max_images=10)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Using pandas.Series as images sequence"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:13.350900Z",
+     "start_time": "2020-10-20T19:38:11.509631Z"
+    },
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "\n",
+    "images_df = pd.DataFrame()\n",
+    "images_df['images'] = images\n",
+    "images_df['labels'] = labels\n",
+    "\n",
+    "ipyplot.plot_images(images_df['images'], max_images=7)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 4.2 Image types   \n",
+    "\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "IPyPlot supports passing in images using one of the following types:\n",
+    "- local image file URL\n",
+    "- external/remote image file URL\n",
+    "- PIL.Image objects\n",
+    "- numpy.ndarray objects\n",
+    "\n",
+    "In previous examples we used local image files URLs so now we will focus more on other options."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Displaying images using images as PIL.Image objects"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:31.876537Z",
+     "start_time": "2020-10-20T19:38:13.353901Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "from PIL import Image\n",
+    "\n",
+    "images_pil = [Image.open(image) for image in images]\n",
+    "\n",
+    "ipyplot.plot_images(images_pil, max_images=10)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Displaying images using images as numpy.ndarray objects"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:35.710371Z",
+     "start_time": "2020-10-20T19:38:31.880538Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "images_np = [np.asarray(image) for image in images_pil]\n",
+    "\n",
+    "ipyplot.plot_images(images_np, max_images=10)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 5. Order, filter, ignore labels\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "By default labels or tabs are sorted alphabetically. Some of the plotting functions allow you to perform custom ordering, filtering or ignoring (not displaying) labels.\n",
+    "\n",
+    "## 5.1 Ordering\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Ordering can be performed:\n",
+    "- **using `tabs_order` param for `plot_class_tabs` function**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:35.788586Z",
+     "start_time": "2020-10-20T19:38:35.712376Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "labels_list_ordered = [\"helmets\", \"boots\", \"insulated_jackets\", \"hardshell_jackets\", \"axes\", \"tents\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:35.978605Z",
+     "start_time": "2020-10-20T19:38:35.794069Z"
+    },
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_tabs(\n",
+    "    images, labels, max_imgs_per_tab=5, tabs_order=labels_list_ordered\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "- **using `labels_order` param for `plot_class_represenations` function**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:36.181026Z",
+     "start_time": "2020-10-20T19:38:35.986558Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_representations(\n",
+    "    images, labels, labels_order=labels_list_ordered\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T13:07:07.491970Z",
+     "start_time": "2020-10-20T13:07:07.222723Z"
+    }
+   },
+   "source": [
+    "## 5.2 Filtering  \n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Filtering tabs/labels can be achieved the same way as with [ordering](#5.1-Ordering).  \n",
+    "Just create a list of labels/tabs that you want to display and pass it into `tabs_order` or `labels_order` params."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:36.414300Z",
+     "start_time": "2020-10-20T19:38:36.191859Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "labels_list_filtered = [\"insulated_jackets\", \"hardshell_jackets\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:36.632884Z",
+     "start_time": "2020-10-20T19:38:36.422002Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_tabs(\n",
+    "    images, labels, max_imgs_per_tab=7, tabs_order=labels_list_filtered\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:36.790950Z",
+     "start_time": "2020-10-20T19:38:36.637573Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_representations(\n",
+    "    images, labels, labels_order=labels_list_filtered\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T13:07:07.495900Z",
+     "start_time": "2020-10-20T13:07:07.324Z"
+    }
+   },
+   "source": [
+    "## 5.3 Ignoring labels\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "If you want to prevent displaying images for specific labels just use `ignore_labels` param as show below"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:37.022119Z",
+     "start_time": "2020-10-20T19:38:36.798582Z"
+    },
+    "scrolled": false
+   },
+   "outputs": [],
+   "source": [
+    "ignore_list = [\"boots\", \"axes\", \"helmets\", \"insulated_jackets\", \"hardshell_jackets\", \"tents\"]\n",
+    "\n",
+    "ipyplot.plot_class_representations(\n",
+    "    images, labels, img_width=150, ignore_labels=ignore_list\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 6. Additional plotting options\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "## 6.1 Hiding image URLs\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "By default IPyPlot will display URLs of plotted images.  \n",
+    "If you don't want to show the URL on top of the image, you can set `show_url` to `False`."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_class_representations(\n",
+    "    images, labels, img_width=100, show_url=False\n",
+    ")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# 7. Force convert images to base64 strings\n",
+    "[[back to the top](#Table-of-content:)]\n",
+    "\n",
+    "Since IPyPlot is using HTML under the hood, by design all the images provided as URL strings are just injected into HTML `img` elements as they are. For all the other image types (numpy.ndarray, PIL.Image) IPyPlot is performing a conversion to base64 strings which are then injected into HTML `img` elements.  \n",
+    "If for any reason you would like to force that behavior for URL strings as well you need to set `force_b64` flag to `True`.  \n",
+    "This param is available for all the plotting functions."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "ExecuteTime": {
+     "end_time": "2020-10-20T19:38:37.274612Z",
+     "start_time": "2020-10-20T19:38:37.030968Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "ipyplot.plot_images(images, max_images=8, force_b64=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:kaggle]",
+   "language": "python",
+   "name": "conda-env-kaggle-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}

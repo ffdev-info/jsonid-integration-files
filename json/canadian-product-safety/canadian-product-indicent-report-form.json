@@ -1,0 +1,58 @@
+{
+  "form": {
+    "formLang": 512051,
+    "instructions": "To View this form please visit https://healthycanadians.gc.ca/apps/radar/CPS-SPC-0007.08.html and go to the final section to load the form.",
+    "formIdentifier": "CPS-SPC-0007.08"
+  },
+  "report": {
+    "lkpReportTypeId": 52386
+  },
+  "submission": {
+    "signatureDate": "2025-05-18",
+    "prgrmId": 1,
+    "lkpCaseTypeId": 51609,
+    "subjectDefId": 1,
+    "lkpSubmissionTypeId": 1533
+  },
+  "submitter": {
+    "lkpContactContextId": 51753
+  },
+  "product": {
+    "otherProducts": {
+      "otherProduct": [
+        {}
+      ]
+    },
+    "areas": {
+      "lkpProductCategoryId": []
+    },
+    "prdctForms": {
+      "lkpProductCategoryId": []
+    },
+    "prdctFunctions": {
+      "lkpProductCategoryId": []
+    }
+  },
+  "contacts": {
+    "contact": [
+      {}
+    ]
+  },
+  "ingredients": {
+    "ingredient": [
+      {
+        "ingredientName": "",
+        "lkpIngredientValidationId": "520068",
+        "mayContain": "0",
+        "contain": "false",
+        "ingredientList": []
+      }
+    ]
+  },
+  "documents": {
+    "document": []
+  },
+  "totalFileSize": {
+    "size": 0
+  }
+}

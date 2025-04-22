@@ -1,0 +1,343 @@
+{
+   "id": "rs:dir:1",
+   "type": "https://ocfl.io/1.1/spec/#inventory",
+   "digestAlgorithm": "sha512",
+   "head": "v1",
+   "manifest": {
+      "04e16f04d827e067ad59d981dd2904528adea03ce6e54e8e3d67829f32e3a084f6d681e26abecba9544d48e2a436308519527922b302657ab5c7ca533c214950": [
+         "v1/content/metadata/schemas/mets.xsd"
+      ],
+      "10c05be332f7abb334468fa92fc214eee85ba7add127a9c970b16dd401783ac7d08ccc14834a4a3171723a1bb741aaff6a963494b5ce9ba2fb5027e3ae57ad3e": [
+         "v1/content/data/ro-crate-preview.html"
+      ],
+      "1abbac4d108b71a212feaff174e3979d7474e5d2d8e302ac0d88ef21845d30ade925e58601cb4ba2d47ef698aabe9af900e40b927933ef83d292fe54bfe9392f": [
+         "v1/content/metadata/premis.xml"
+      ],
+      "1d497009f3aabd230bcd055ef09fd180e63e330c47f4c1afdfc36172e5421a220b78e3e3ce30c9ae533c516accfa8976fd3f1198bd15ff79373d5fe87fc64cd2": [
+         "v1/content/metadata/thumbnail_v1.jsonl.gz"
+      ],
+      "290b728db747a05d079d178bc0458190715c8676cd01341049562b44514e6148522f611a27627cee24b930d1f0fb11e8766e4fe0497eb418bfd0b04b980234f3": [
+         "v1/content/metadata/indexer_v1.jsonl.gz"
+      ],
+      "378157325bbec853baff9fa03b72c610ba08a09d56ec694e9920163acc5b9e730a1d668c366576c8c3007c1bc3330075fc86b3b9ed885b8ebcde39da691a64fa": [
+         "v1/content/metadata/mets.xml"
+      ],
+      "37d02572f8f7b3a3cb55fe77e3cb266bb24303dbba124d2cdea7496e17d1a7d8034130e5037aa03a27b7eb2efb7d69cf5a12fcaa1ad0f0cd6d0b781efe06f604": [
+         "v1/content/data/metadata/dataset.json"
+      ],
+      "4b7faf21552c10b4dce378b01a20ac0eed8e0db6e7315cecd7543e8cad7139c13190a3b2311fce996816707230459dea1fff15c304f33bc3d56cec663ef3e7f7": [
+         "v1/content/data/metadata/agents.json"
+      ],
+      "6ae0fcd1de8ad8a4972282aed842eb00acbcee16163af6199f098fdfcaf5d88d11d4574be77b06a9af615de9477b9661a4358667167b8e7eaf757abeb8776ea3": [
+         "v1/content/data/Drinks.RData"
+      ],
+      "6f6a6418e72610c0021412627ac89a5d1acb3c90a6fdef7d8c408c96bdbaa2f528b307f99fb72dd83458d796a10601ce012d7749d4b4493c163cd09ec5ce9b89": [
+         "v1/content/README.md"
+      ],
+      "74d84cfa51141b9c4d408148b11da015acd745bb152dab82fba3e500853badb0d5eef25e1e2d853df51279aa67b02d831a61394f7dc351ddff7b2ee14b93cb41": [
+         "v1/content/metadata/filesystem_v1.jsonl.gz"
+      ],
+      "8d6a0bfb2414fab79083d8a607c17e0e32c8e6bbae735428044d9162e8154644dd64c9b4788eba76b7021e5283f50490353157ecd7aba5f33bce60a97d35293f": [
+         "v1/content/metadata/info.json"
+      ],
+      "91287e35a959e36dbf69d561ca41d2b9e753d10b227c25101a37b7d150c6e3c77ec41ab5b07f2180dc6ae67336c4d0c8210e4cd303d0c3e5718c2c78f79437b4": [
+         "v1/content/data/Drinks.csv"
+      ],
+      "988498a3318072ea7bb167c40ca4964140fca916882ecd6f30eab11075c41f474aa67645eb7a4bec53e906c35fcc3a24112e6a28d998f9c8e252c40c90e71f51": [
+         "v1/content/data/Drinks-ddi.xml"
+      ],
+      "9bae080de2e086fcc9da190bdbfacda33220939215dc4488ebefd31f2159bea89eb6f74e60ba8820e7186297a46d585785b05c55459c29f0c8e1455c1e469718": [
+         "v1/content/data/Drinks.tab"
+      ],
+      "be2717e64e6ec1cbffc84b11a5cb906d73312a8b742e95387210855f9cdedec16b24a6213f8321f56de827d9a7615b2ec977dc6cfe889915d92b4b5346c3df7b": [
+         "v1/content/data/ro-crate-metadata.json"
+      ],
+      "d524ed457c67a9e9e4de723519f26567e098c02b8db21fca6807683b30a0b9e477a230cef942e8245411f2a6ccb0f8a7df2bae18dc7363ec2810899d67064a32": [
+         "v1/content/metadata/schemas/xlink.xsd"
+      ],
+      "d5a020597644bc2830650acb4c0ac8eb6aeae7807a9457299e4d894af6c8da8a20adc5787682b1eebaf7fc3bbb612a8f499161d86f46470863c8f0ef54575a55": [
+         "v1/content/data/Drinkscitation-endnote.xml"
+      ],
+      "d5b5b604c5e4f071d80196e2f49e317e59d4908341fedcd9255a5c8a3b9e3da3c9cefb66f73f80605bf82b1e6f58dbcbd9b405899df8221a803fec39d61a1d74": [
+         "v1/content/data/Drinkscitation-ris.ris"
+      ],
+      "ef3327332692bf0cee622ef8d72aaee2b8cb479a6f4136c31f82d75502a651985a6bdbb1cb03b5928c6b7052a97bc9989e1e111dbc78a273031e35f875ee3221": [
+         "v1/content/data/Drinkscitation-bib.bib"
+      ],
+      "f0feb6d7d30a0f27ffd53dadb976ded9fde56adbe339fac0d2cb43352966c768103001c44d1dd0a013c89323f3ca81557f4ddf106629134d82ac9f0587de07c5": [
+         "v1/content/metadata/schemas/premis.xsd"
+      ]
+   },
+   "versions": {
+      "v1": {
+         "created": "2025-04-08T13:44:47+02:00",
+         "message": "open preserve format corpus",
+         "state": {
+            "04e16f04d827e067ad59d981dd2904528adea03ce6e54e8e3d67829f32e3a084f6d681e26abecba9544d48e2a436308519527922b302657ab5c7ca533c214950": [
+               "metadata/schemas/mets.xsd"
+            ],
+            "10c05be332f7abb334468fa92fc214eee85ba7add127a9c970b16dd401783ac7d08ccc14834a4a3171723a1bb741aaff6a963494b5ce9ba2fb5027e3ae57ad3e": [
+               "data/ro-crate-preview.html"
+            ],
+            "1abbac4d108b71a212feaff174e3979d7474e5d2d8e302ac0d88ef21845d30ade925e58601cb4ba2d47ef698aabe9af900e40b927933ef83d292fe54bfe9392f": [
+               "metadata/premis.xml"
+            ],
+            "1d497009f3aabd230bcd055ef09fd180e63e330c47f4c1afdfc36172e5421a220b78e3e3ce30c9ae533c516accfa8976fd3f1198bd15ff79373d5fe87fc64cd2": [
+               "metadata/thumbnail_v1.jsonl.gz"
+            ],
+            "290b728db747a05d079d178bc0458190715c8676cd01341049562b44514e6148522f611a27627cee24b930d1f0fb11e8766e4fe0497eb418bfd0b04b980234f3": [
+               "metadata/indexer_v1.jsonl.gz"
+            ],
+            "378157325bbec853baff9fa03b72c610ba08a09d56ec694e9920163acc5b9e730a1d668c366576c8c3007c1bc3330075fc86b3b9ed885b8ebcde39da691a64fa": [
+               "metadata/mets.xml"
+            ],
+            "37d02572f8f7b3a3cb55fe77e3cb266bb24303dbba124d2cdea7496e17d1a7d8034130e5037aa03a27b7eb2efb7d69cf5a12fcaa1ad0f0cd6d0b781efe06f604": [
+               "data/metadata/dataset.json"
+            ],
+            "4b7faf21552c10b4dce378b01a20ac0eed8e0db6e7315cecd7543e8cad7139c13190a3b2311fce996816707230459dea1fff15c304f33bc3d56cec663ef3e7f7": [
+               "data/metadata/agents.json"
+            ],
+            "6ae0fcd1de8ad8a4972282aed842eb00acbcee16163af6199f098fdfcaf5d88d11d4574be77b06a9af615de9477b9661a4358667167b8e7eaf757abeb8776ea3": [
+               "data/Drinks.RData"
+            ],
+            "6f6a6418e72610c0021412627ac89a5d1acb3c90a6fdef7d8c408c96bdbaa2f528b307f99fb72dd83458d796a10601ce012d7749d4b4493c163cd09ec5ce9b89": [
+               "README.md"
+            ],
+            "74d84cfa51141b9c4d408148b11da015acd745bb152dab82fba3e500853badb0d5eef25e1e2d853df51279aa67b02d831a61394f7dc351ddff7b2ee14b93cb41": [
+               "metadata/filesystem_v1.jsonl.gz"
+            ],
+            "8d6a0bfb2414fab79083d8a607c17e0e32c8e6bbae735428044d9162e8154644dd64c9b4788eba76b7021e5283f50490353157ecd7aba5f33bce60a97d35293f": [
+               "metadata/info.json"
+            ],
+            "91287e35a959e36dbf69d561ca41d2b9e753d10b227c25101a37b7d150c6e3c77ec41ab5b07f2180dc6ae67336c4d0c8210e4cd303d0c3e5718c2c78f79437b4": [
+               "data/Drinks.csv"
+            ],
+            "988498a3318072ea7bb167c40ca4964140fca916882ecd6f30eab11075c41f474aa67645eb7a4bec53e906c35fcc3a24112e6a28d998f9c8e252c40c90e71f51": [
+               "data/Drinks-ddi.xml"
+            ],
+            "9bae080de2e086fcc9da190bdbfacda33220939215dc4488ebefd31f2159bea89eb6f74e60ba8820e7186297a46d585785b05c55459c29f0c8e1455c1e469718": [
+               "data/Drinks.tab"
+            ],
+            "be2717e64e6ec1cbffc84b11a5cb906d73312a8b742e95387210855f9cdedec16b24a6213f8321f56de827d9a7615b2ec977dc6cfe889915d92b4b5346c3df7b": [
+               "data/ro-crate-metadata.json"
+            ],
+            "d524ed457c67a9e9e4de723519f26567e098c02b8db21fca6807683b30a0b9e477a230cef942e8245411f2a6ccb0f8a7df2bae18dc7363ec2810899d67064a32": [
+               "metadata/schemas/xlink.xsd"
+            ],
+            "d5a020597644bc2830650acb4c0ac8eb6aeae7807a9457299e4d894af6c8da8a20adc5787682b1eebaf7fc3bbb612a8f499161d86f46470863c8f0ef54575a55": [
+               "data/Drinkscitation-endnote.xml"
+            ],
+            "d5b5b604c5e4f071d80196e2f49e317e59d4908341fedcd9255a5c8a3b9e3da3c9cefb66f73f80605bf82b1e6f58dbcbd9b405899df8221a803fec39d61a1d74": [
+               "data/Drinkscitation-ris.ris"
+            ],
+            "ef3327332692bf0cee622ef8d72aaee2b8cb479a6f4136c31f82d75502a651985a6bdbb1cb03b5928c6b7052a97bc9989e1e111dbc78a273031e35f875ee3221": [
+               "data/Drinkscitation-bib.bib"
+            ],
+            "f0feb6d7d30a0f27ffd53dadb976ded9fde56adbe339fac0d2cb43352966c768103001c44d1dd0a013c89323f3ca81557f4ddf106629134d82ac9f0587de07c5": [
+               "metadata/schemas/premis.xsd"
+            ]
+         },
+         "user": {
+            "address": "https://github.com/ocfl-archive/gocfl",
+            "name": "unknown user"
+         }
+      }
+   },
+   "fixity": {
+      "md5": {
+         "02c7ccbbf02ef9ebf83f9ec2111dc839": [
+            "v1/content/metadata/mets.xml"
+         ],
+         "068c4df2307e0f7349e847515c24e8b9": [
+            "v1/content/metadata/premis.xml"
+         ],
+         "0b1bd976d7f8d1236f3a1d950af8b553": [
+            "v1/content/data/Drinkscitation-endnote.xml"
+         ],
+         "0fb463d46bef43042c9dda87c8940947": [
+            "v1/content/data/ro-crate-metadata.json"
+         ],
+         "29915b568d56e734ef33ce7dae8a0bfc": [
+            "v1/content/data/Drinkscitation-bib.bib"
+         ],
+         "2ecbccede07a979200f155b9e1ceb1a5": [
+            "v1/content/README.md"
+         ],
+         "342d9825db531466915b63d3b7329d22": [
+            "v1/content/metadata/filesystem_v1.jsonl.gz"
+         ],
+         "526d039621c7ad5f2065f68b3e4ba190": [
+            "v1/content/data/Drinkscitation-ris.ris"
+         ],
+         "60dfc63a796c507af85c6ab635bfdf8e": [
+            "v1/content/metadata/schemas/premis.xsd"
+         ],
+         "6bdc7f9459a502964f889d70a335cece": [
+            "v1/content/metadata/schemas/xlink.xsd"
+         ],
+         "892de3b15bbaa0ef6af3b23be411e379": [
+            "v1/content/data/Drinks.tab"
+         ],
+         "8e2c9f4b455c68dec3f4ae4d265585cc": [
+            "v1/content/metadata/info.json"
+         ],
+         "b89e75fd936827d517daa321aa9620a8": [
+            "v1/content/metadata/indexer_v1.jsonl.gz"
+         ],
+         "d303b7a71ba2b4ff0061bdcba0f152e0": [
+            "v1/content/metadata/schemas/mets.xsd"
+         ],
+         "da257c97ac8070114134f021a96dda7c": [
+            "v1/content/data/metadata/dataset.json"
+         ],
+         "dc09b52454fe29d36723b477e6f6f46e": [
+            "v1/content/data/Drinks-ddi.xml"
+         ],
+         "ddb3bc08ca0b5826efef8c87a277475f": [
+            "v1/content/data/Drinks.csv"
+         ],
+         "e1da6aaab8c1459d8cd7cc733f1069ec": [
+            "v1/content/data/ro-crate-preview.html"
+         ],
+         "eea23c7a3f8f9bf736c38095924d9e1d": [
+            "v1/content/data/Drinks.RData"
+         ],
+         "f0d79988b7772c003d04a28bd7417a62": [
+            "v1/content/metadata/thumbnail_v1.jsonl.gz"
+         ],
+         "fe9a8f41bd56b3ebea22bada73b37b73": [
+            "v1/content/data/metadata/agents.json"
+         ]
+      },
+      "sha1": {
+         "2ddedb0d429feebe5deeef95ec33d70b3387701c": [
+            "v1/content/data/ro-crate-preview.html"
+         ],
+         "33125caad4fba8067db3b3a85496f06314abdbff": [
+            "v1/content/data/Drinks.tab"
+         ],
+         "36ba0115fc90728942d1c4e31d16d4966ed4cd2d": [
+            "v1/content/data/metadata/agents.json"
+         ],
+         "38000241d327209e74f30889fee74fb49d9e3ea3": [
+            "v1/content/data/Drinkscitation-endnote.xml"
+         ],
+         "473aca92c2c22c55084afd2c0367bc0a98ca2a7f": [
+            "v1/content/metadata/schemas/xlink.xsd"
+         ],
+         "48cbf98d913570b248d790788c5a4e96e4b2380b": [
+            "v1/content/metadata/filesystem_v1.jsonl.gz"
+         ],
+         "4a9a914684665e1682b4b30f5c030ed59a8ab58e": [
+            "v1/content/data/Drinkscitation-bib.bib"
+         ],
+         "58423a999eec2997bcfffb247e9ecd3dfd0abf44": [
+            "v1/content/metadata/thumbnail_v1.jsonl.gz"
+         ],
+         "7436a832873d7d1134d0870c60eda074af8ba25e": [
+            "v1/content/metadata/schemas/premis.xsd"
+         ],
+         "77a7aa67025262491d414206dbe537364a2de196": [
+            "v1/content/metadata/info.json"
+         ],
+         "8254f2998b55824d6c614cf66fa854b11e4fd50c": [
+            "v1/content/README.md"
+         ],
+         "82934df7434f0fa9b19fc9d253f19221b0831c59": [
+            "v1/content/data/Drinks-ddi.xml"
+         ],
+         "844a027b842ae832b7a173dfd8fbc69c1463f32e": [
+            "v1/content/data/Drinkscitation-ris.ris"
+         ],
+         "923f28bdbbd7d5dc3e55a5d21038ae21279841de": [
+            "v1/content/data/Drinks.csv"
+         ],
+         "9d25db305862dc4f98ed6e2b5673252416a633e0": [
+            "v1/content/metadata/mets.xml"
+         ],
+         "a281bc8773910c860e843db71da4426782da9334": [
+            "v1/content/metadata/indexer_v1.jsonl.gz"
+         ],
+         "a85e74b9283ecfd8c159740bb8268d841b3ca177": [
+            "v1/content/data/ro-crate-metadata.json"
+         ],
+         "c79854612af9cd12d61ea18cd9c0d938a33da2ad": [
+            "v1/content/data/Drinks.RData"
+         ],
+         "d0a5a8662df26d351053b90db521021fd1bf3f7b": [
+            "v1/content/metadata/premis.xml"
+         ],
+         "e2cf949f9a86e64c69ce1f35239d538b2613b2f3": [
+            "v1/content/data/metadata/dataset.json"
+         ],
+         "fc327e0b35a6ebd2f810e3df33524177e604c2ab": [
+            "v1/content/metadata/schemas/mets.xsd"
+         ]
+      },
+      "sha256": {
+         "03b8a77a20b32b882ad799e12262671d07ad18210c60233f4e613a1289491cba": [
+            "v1/content/metadata/schemas/premis.xsd"
+         ],
+         "110257ef53ee97f02256dea09e89a1d40494d6e7dd485fb1dba14de9a4358c6e": [
+            "v1/content/data/ro-crate-preview.html"
+         ],
+         "16e5067d947d3b23be6f7b3bdac9c37f64e8fb307eca09f8e33c2a4264770e24": [
+            "v1/content/data/Drinkscitation-bib.bib"
+         ],
+         "2b10c4e2b9a31f2dcd618c4d6c0387950ca2cafa47284ee305b88e87a128c96f": [
+            "v1/content/data/metadata/dataset.json"
+         ],
+         "30e6fa98fb48c2b132824d1ac5e2243c0be9e9082ff32598d34d7687ca7f6c7f": [
+            "v1/content/metadata/thumbnail_v1.jsonl.gz"
+         ],
+         "333f5392b7b1122388b9643e0220d10cfc4b214dd44a70dd15480c83b0bb13f1": [
+            "v1/content/data/Drinks-ddi.xml"
+         ],
+         "3bb4edd49601e0d0719dda24731d456823b2a71962bf0a17f723ee14df09b838": [
+            "v1/content/metadata/indexer_v1.jsonl.gz"
+         ],
+         "40eb4815a8d402ca35b45b2846fd0b42e3e483ddce3594475f6986e4e5a8944b": [
+            "v1/content/data/Drinkscitation-endnote.xml"
+         ],
+         "4a02d920a742ceffb7801db778d8d47307f52606261c6bc5bd0a46b1b57a9eb0": [
+            "v1/content/data/ro-crate-metadata.json"
+         ],
+         "53cad8f391d755b602d7e2e677f808a3e8260e9139d1931f9c28eda524f1c65a": [
+            "v1/content/data/Drinks.RData"
+         ],
+         "92a993a3886d7c7d64d1a6d19b573ede5783b1f5bf938b1ba92b93ca37590004": [
+            "v1/content/metadata/schemas/mets.xsd"
+         ],
+         "936b8d593f88f09abb9f42ba6a1b9869e8fc076defbd5479ad558311c4872c0c": [
+            "v1/content/README.md"
+         ],
+         "9c34cbe1404aaf0593f8d41bd91676d025b7ae77db8cecbd6e11b75a9171058f": [
+            "v1/content/data/Drinks.tab"
+         ],
+         "9d92022dfe3bb0df798a0e0615a76755b609e209459606433009cdf497685e34": [
+            "v1/content/data/Drinks.csv"
+         ],
+         "a0634609a8da6495f8be0a756af9340e5361f5fa4c96bdbcea46a0a2205efed8": [
+            "v1/content/data/metadata/agents.json"
+         ],
+         "c06ade34454cb29e94af565c70056b0f7a366df17521efe45221c4030246a940": [
+            "v1/content/metadata/info.json"
+         ],
+         "c0a8a6a4fe8edcd74de8b5a1de34b8a3140437d6b6fec0e6f9102a29f510d39b": [
+            "v1/content/metadata/mets.xml"
+         ],
+         "ca1447b08cd01267b617aaedeeade9a183c9f36157682fcef2a5b0ac8d54344a": [
+            "v1/content/metadata/filesystem_v1.jsonl.gz"
+         ],
+         "e73ccb1d368ae5721bef85f7aebfa95a36a3c6a9113a0b4837af9774486ffff1": [
+            "v1/content/metadata/premis.xml"
+         ],
+         "e9bca917e4e0e2c8cd59bb399d663cddc9d08250f762d41f65296d883129a733": [
+            "v1/content/data/Drinkscitation-ris.ris"
+         ],
+         "f1f5bb6003165cdd8f6c1fcc32f8fd1f965e1681010f3b9806d9460bcffa8a3c": [
+            "v1/content/metadata/schemas/xlink.xsd"
+         ]
+      }
+   }
+}

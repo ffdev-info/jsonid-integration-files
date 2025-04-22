@@ -1,0 +1,78 @@
+{
+  "settings": {
+    "basic": {
+      "fontFamily": "Roboto",
+      "fontSize": 13,
+      "handdrawn": false
+    },
+    "grid": {
+      "visible": true,
+      "origin": true,
+      "snap": true,
+      "size": 32,
+      "color": "#f0f0f0",
+      "lineWidth": 1,
+      "originWidth": 5,
+      "background": "#ffffff"
+    },
+    "room": {
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 2,
+      "lineStyle": 1,
+      "shape": 0,
+      "rounding": 0,
+      "darknessSize": 50,
+      "fillColor": "#ffffff",
+      "borderColor": "#000000",
+      "nameColor": "#333333",
+      "subtitleColor": "#666666",
+      "darkColor": "rgba(33, 35, 97, 0.8)",
+      "startRoomColor": "green",
+      "endRoomColor": "red"
+    },
+    "connector": {
+      "lineWidth": 1,
+      "lineStyle": 1,
+      "isCurve": false,
+      "color": "#000000",
+      "stalk": 16,
+      "arrowSize": 5,
+      "curveStrength": 0.4,
+      "labelDistance": 12
+    },
+    "note": {
+      "minWidth": 64,
+      "minHeight": 32,
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 1,
+      "lineStyle": 1,
+      "shape": 0,
+      "rounding": 0,
+      "fillColor": "#ffffff",
+      "borderColor": "#000000",
+      "textColor": "#333333"
+    },
+    "block": {
+      "minWidth": 64,
+      "minHeight": 32,
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 1,
+      "lineStyle": 0,
+      "shape": 0,
+      "rounding": 0,
+      "fillColor": "#D5E5D6",
+      "borderColor": "#000000"
+    }
+  },
+  "title": "",
+  "author": "",
+  "description": "",
+  "elements": [],
+  "startRoom": 0
+}

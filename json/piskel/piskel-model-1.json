@@ -1,0 +1,13 @@
+{
+    "modelVersion": 1,
+    "piskel": {
+        "name": "example",
+        "description": "exemplary",
+        "fps": 12,
+        "height": 32,
+        "width": 32,
+        "layers": [
+            "{\"name\":\"Layer 1\",\"opacity\":1,\"frameCount\":1,\"chunks\":[{\"layout\":[[0]],\"base64PNG\":\"data:image/png;base64,iVBORw0KGgoAAA\"}"
+        ]
+    }
+}

@@ -1,0 +1,86 @@
+{
+  "$asm.manifest": "http://purl.allotrope.org/manifests/absorbance/REC/2025/03/absorbance.manifest",
+  "plate reader aggregate document": {
+    "plate reader document": [
+      {
+        "analyst": "DBAILEY",
+        "device system document": {
+          "device identifier": "Instrument1",
+          "model number": "SpectraMax L"
+        },
+        "measurement aggregate document": {
+          "analytical method identifier": "Method1",
+          "container type": "well plate",
+          "experiment type": "quantitation of vaccine potency",
+          "experimental data identifier": "05AUG20_DBAILEY_PLATE 1",
+          "measurement document": [
+            {
+              "absorbance": {
+                "unit": "mAU",
+                "value": 0.056
+              },
+              "compartment temperature": {
+                "unit": "degC",
+                "value": 27.8
+              },
+              "device control aggregate document": {
+                "device control document": [
+                  {
+                    "device type": "shaker",
+                    "shaking configuration description": "Linear: 0:05 (MM:SS), Frequency: 567 cpm (3 mm)"
+                  },
+                  {
+                    "detector bandwidth setting": {
+                      "unit": "nm",
+                      "value": 2.0
+                    },
+                    "detector carriage speed setting": "normal",
+                    "detector distance setting (plate reader)": {
+                      "unit": "mm",
+                      "value": 7.0
+                    },
+                    "detector gain setting": "autoscale",
+                    "detector wavelength setting": {
+                      "unit": "nm",
+                      "value": 635.0
+                    },
+                    "device type": "UV detector",
+                    "integration time": {
+                      "unit": "s",
+                      "value": 0.5
+                    },
+                    "number of averages": {
+                      "unit": "#",
+                      "value": 8.0
+                    },
+                    "scan position setting (plate reader)": "top scan position (plate reader)"
+                  }
+                ]
+              },
+              "measurement identifier": "98f62a50-5267-4d2b-ab3a-76e14e4c55f0",
+              "sample document": {
+                "batch identifier": "batch-number",
+                "location identifier": "A1",
+                "mass concentration": {
+                  "unit": "pg/mL",
+                  "value": 1000.0
+                },
+                "sample identifier": "Standard 1",
+                "sample role type": "standard sample role"
+              }
+            }
+          ],
+          "measurement time": "2015-09-24T03:47:13.001Z",
+          "plate well count": {
+            "unit": "#",
+            "value": 96.0
+          },
+          "well volume": {
+            "unit": "μL",
+            "value": 0.2
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "address": "rs@example.com",
+  "created": "2024-11-14",
+  "last_changed": "2024-01-01",
+  "organisation": "rs",
+  "organisation_id": "rs:123445",
+  "references": [
+    "123",
+    "123"
+  ],
+  "signature": "123345",
+  "title": "title1 MD TEST",
+  "user": "rs"
+}

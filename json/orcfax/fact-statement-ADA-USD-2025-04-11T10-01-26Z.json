@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "type": "Claim",
+  "description": "ADA price in USD",
+  "identifier": "urn:orcfax:55bd6a5f-04b1-456d-b998-76bfbfb8fb7f",
+  "dateCreated": "2025-04-11T10:01:26Z",
+  "text": "The price of 1 ADA at 2025-04-11T10:01:26Z is 0.631196 USD",
+  "about": {
+    "@type": "ExchangeRateSpecification",
+    "currency": "ADA",
+    "currentExchangeRate": {
+      "@type": "UnitPriceSpecification",
+      "price": 0.631196,
+      "priceCurrency": "USD"
+    }
+  },
+  "claimInterpreter": {
+    "@type": "Organization",
+    "name": "Orcfax",
+    "url": "https://orcfax.io/"
+  },
+  "appearance": [
+    "message-ADA-USD-bitstamp.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67-2025-04-11T10-01-16Z.json",
+    "message-ADA-USD-coinbase.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67-2025-04-11T10-01-11Z.json",
+    "message-ADA-USD-kraken.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67-2025-04-11T10-01-17Z.json",
+    "message-ADA-USD-kucoin_prices_simple.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67-2025-04-11T10-01-17Z.json",
+    "message-ADA-USD-bitfinex_simple.tick_generic_jq.0.5.0.6378e9d597beee195e02cb4b27923626514d5b67-2025-04-11T10-01-17Z.json"
+  ],
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "validation-ADA-USD-2025-04-11T10-01-26Z.json",
+    "creator": "Orcfax Validator Node: 1.1.0",
+    "identifier": "urn:orcfax:eb30295b-422c-4b75-b348-fdc626efd68c",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  }
+}

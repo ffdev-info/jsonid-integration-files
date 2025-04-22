@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "basic": {
+      "fontFamily": "Roboto",
+      "fontSize": 13,
+      "handdrawn": false
+    },
+    "grid": {
+      "visible": true,
+      "origin": true,
+      "snap": true,
+      "size": 32,
+      "color": "#f0f0f0",
+      "lineWidth": 1,
+      "originWidth": 5,
+      "background": "#ffffff"
+    },
+    "room": {
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 2,
+      "lineStyle": 1,
+      "shape": 0,
+      "rounding": 0,
+      "darknessSize": 50,
+      "fillColor": "#ffffff",
+      "borderColor": "#000000",
+      "nameColor": "#333333",
+      "subtitleColor": "#666666",
+      "darkColor": "rgba(33, 35, 97, 0.8)",
+      "startRoomColor": "green",
+      "endRoomColor": "red"
+    },
+    "connector": {
+      "lineWidth": 1,
+      "lineStyle": 1,
+      "isCurve": false,
+      "color": "#000000",
+      "stalk": 16,
+      "arrowSize": 5,
+      "curveStrength": 0.4,
+      "labelDistance": 12
+    },
+    "note": {
+      "minWidth": 64,
+      "minHeight": 32,
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 1,
+      "lineStyle": 1,
+      "shape": 0,
+      "rounding": 0,
+      "fillColor": "#ffffff",
+      "borderColor": "#000000",
+      "textColor": "#333333"
+    },
+    "block": {
+      "minWidth": 64,
+      "minHeight": 32,
+      "width": 96,
+      "height": 64,
+      "margin": 6,
+      "lineWidth": 1,
+      "lineStyle": 0,
+      "shape": 0,
+      "rounding": 0,
+      "fillColor": "#D5E5D6",
+      "borderColor": "#000000"
+    }
+  },
+  "title": "Test Map",
+  "author": "JSONID",
+  "description": "A test map created for JSONID\n",
+  "elements": [
+    {
+      "id": 1,
+      "_guid": "03d048cc-9fca-4120-b968-abc250f3b77d",
+      "_x": -480,
+      "_y": -288,
+      "_type": "Room",
+      "_name": "Beginning",
+      "_subtitle": "",
+      "_description": "",
+      "_dark": true,
+      "_endroom": false,
+      "_w": 96,
+      "_h": 64,
+      "objects": [],
+      "_lineStyle": 1,
+      "_shape": 0
+    },
+    {
+      "id": 2,
+      "_guid": "eca92063-c119-48a0-bd20-3de85321290a",
+      "_x": -160,
+      "_y": -288,
+      "_type": "Room",
+      "_name": "Middle",
+      "_subtitle": "",
+      "_description": "",
+      "_dark": false,
+      "_endroom": false,
+      "_w": 96,
+      "_h": 64,
+      "objects": [
+        {
+          "id": 0,
+          "_guid": "59af3108-dcc5-4744-868e-d7a2dfb450fb",
+          "_name": "FRED",
+          "_type": "Object",
+          "_description": "A human digital forensics export",
+          "_kind": 4,
+          "_content": []
+        }
+      ],
+      "_lineStyle": 1,
+      "_shape": 2
+    },
+    {
+      "id": 3,
+      "_guid": "c20cd691-4d1c-4ef4-8877-3f5531c340c3",
+      "_x": 192,
+      "_y": -288,
+      "_type": "Room",
+      "_name": "End",
+      "_subtitle": "",
+      "_description": "",
+      "_dark": false,
+      "_endroom": true,
+      "_w": 96,
+      "_h": 64,
+      "objects": [],
+      "_lineStyle": 1,
+      "_shape": 0
+    },
+    {
+      "id": 4,
+      "_guid": "3e51e84e-8d54-4b0b-bc9c-6c2daa7a7b28",
+      "_x": -160,
+      "_y": -96,
+      "_type": "Note",
+      "_text": "A note about this map\n",
+      "_w": 96,
+      "_h": 64,
+      "_lineStyle": 1,
+      "_shape": 0
+    }
+  ],
+  "startRoom": 0
+}
