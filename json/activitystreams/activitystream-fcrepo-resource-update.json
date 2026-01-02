@@ -1,0 +1,28 @@
+{
+    "id": "urn:uuid:b511e8bc-add1-47ac-bb6c-20e068b424fc",
+    "type": ["Update"],
+    "name": "update resource",
+    "published": "2018-04-24T17:58:49.495Z",
+    "actor": [{
+        "type": "Person",
+        "id": "info:fedora/local-user#bypassAdmin"
+    }, {
+        "type": "Application",
+        "name": "curl/7.54.0"
+    }],
+    "object": {
+        "type": ["http://www.w3.org/ns/ldp#Container", "http://fedora.info/definitions/v4/repository#Resource", "http://fedora.info/definitions/v4/repository#Container", "http://www.w3.org/ns/ldp#RDFSource", "http://www.w3.org/ns/ldp#BasicContainer", "http://www.w3.org/ns/prov#Entity"],
+        "id": "http://localhost:8080/rest/8e/5c/ce/65/8e5cce65-8272-4046-beb0-b7992bf07828",
+        "isPartOf": "http://localhost:8080/rest"
+    },
+    "@context": ["https://www.w3.org/ns/activitystreams", {
+        "prov": "http://www.w3.org/ns/prov#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "type": "@type",
+        "id": "@id",
+        "isPartOf": {
+            "@id": "dcterms:isPartOf",
+            "@type": "@id"
+        }
+    }]
+}

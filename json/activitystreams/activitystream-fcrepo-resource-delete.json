@@ -1,0 +1,28 @@
+{
+    "id": "urn:uuid:31410238-7a73-4014-a457-1b6d7df5adac",
+    "type": ["Delete"],
+    "name": "delete resource",
+    "published": "2018-04-24T17:51:15.968Z",
+    "actor": [{
+        "type": "Person",
+        "id": "info:fedora/local-user#bypassAdmin"
+    }, {
+        "type": "Application",
+        "name": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36"
+    }],
+    "object": {
+        "type": ["http://www.w3.org/ns/ldp#Container", "http://fedora.info/definitions/v4/repository#Resource", "http://fedora.info/definitions/v4/repository#Container", "http://www.w3.org/ns/ldp#RDFSource", "http://www.w3.org/ns/ldp#BasicContainer", "http://www.w3.org/ns/prov#Entity"],
+        "id": "http://localhost:8080/rest/test1",
+        "isPartOf": "http://localhost:8080/rest"
+    },
+    "@context": ["https://www.w3.org/ns/activitystreams", {
+        "prov": "http://www.w3.org/ns/prov#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "type": "@type",
+        "id": "@id",
+        "isPartOf": {
+            "@id": "dcterms:isPartOf",
+            "@type": "@id"
+        }
+    }]
+}
