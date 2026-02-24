@@ -1,0 +1,201 @@
+{
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 25,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.asset.image": 5,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.arrow": 5,
+      "com.tldraw.shape.camera": 0,
+      "com.tldraw.shape.frame": 4,
+      "com.tldraw.shape.geometry": 4,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.path": 5,
+      "com.tldraw.shape.pointsPath": 5,
+      "com.tldraw.shape.polyLine": 5,
+      "com.tldraw.shape.richText": 4,
+      "com.tldraw.shape.text": 3,
+      "com.tldraw.shape.video": 3,
+      "com.tldraw.shape.web-embed": 4,
+      "com.tldraw.binding.arrow": 1,
+      "com.irakasi.animation": 0,
+      "com.irakasi.store": 1
+    }
+  },
+  "shapes": [
+    {
+      "x": -18.01171875,
+      "y": -22.6044921875,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {
+        "isCreating": true
+      },
+      "id": "shape:x-9tmdL6r13G7KgKZ9ZOK",
+      "type": "geometry",
+      "props": {
+        "w": 113.06640625,
+        "h": 123.896484375,
+        "cornerRadius": 4,
+        "geo": "rectangle",
+        "start": 0,
+        "end": 360,
+        "filter": null,
+        "mask": null,
+        "pivotX": 56.533203125,
+        "pivotY": 61.9482421875,
+        "isClosed": true,
+        "stroke": "#e5e7eb",
+        "strokeStyle": "freehand",
+        "strokeWidth": 3,
+        "fill": "#e5e7eb",
+        "strokeOpacity": 1,
+        "fillOpacity": 1,
+        "fillStyle": "none",
+        "thinning": 0.65,
+        "streamline": 0.25,
+        "smoothing": 0.8,
+        "simulatePressure": true,
+        "last": true,
+        "roughness": 0,
+        "fillRoughness": 1,
+        "bowing": 0.85,
+        "seed": 3.67,
+        "disableMultiStrokeFill": false,
+        "disableMultiStroke": true,
+        "preserveVertices": true,
+        "simplification": 0.5,
+        "hachureAngle": 41,
+        "curveStepCount": 9,
+        "curveFitting": 0.95,
+        "dashOffset": 0,
+        "dashGap": 0,
+        "fillWeight": 1,
+        "hachureGap": 10,
+        "selectedHandleIds": [],
+        "visible": true,
+        "isAspectRatioLocked": false,
+        "gradientOptions": {
+          "linear": {
+            "x1": -56.533203125,
+            "y1": 0,
+            "x2": 56.533203125,
+            "y2": 0
+          },
+          "radial": {
+            "cx": 0,
+            "cy": 0,
+            "r": 118.35763699605754,
+            "fx": 0,
+            "fy": 0
+          },
+          "gradientUnits": "userSpaceOnUse",
+          "spreadMethod": "pad",
+          "gradientTransform": {
+            "translate": {
+              "x": 56.533203125,
+              "y": 61.9482421875
+            },
+            "scale": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#f3f4f6",
+              "opacity": 1
+            },
+            {
+              "offset": 1,
+              "color": "#1f2937",
+              "opacity": 1
+            }
+          ],
+          "showFocus": false
+        },
+        "fillBackground": "#111827",
+        "fillBackgroundOpacity": 1,
+        "transparent": false,
+        "strokeGap": 6,
+        "strokeDashLength": 6,
+        "isMask": false,
+        "url": null,
+        "assetId": null,
+        "isTileRatioLocked": true,
+        "tileW": 0,
+        "tileH": 0,
+        "tileable": false,
+        "isFlippedHorizontally": false,
+        "isFlippedVertically": false,
+        "imageFillX": 0,
+        "imageFillY": 0,
+        "imageFillRotation": 0,
+        "keepStrokesRatio": false,
+        "layers": [],
+        "text": "",
+        "font": "draw",
+        "textScale": 1,
+        "textAlign": "middle",
+        "textVerticalAlign": "middle",
+        "lineHeight": 1.35,
+        "drawFamily": {
+          "id": "Indie Flower",
+          "url": "https://fonts.gstatic.com/s/indieflower/v21/m8JVjfNVeKWVnh3QMuKkFcZla0GG1dKEDw.woff2"
+        },
+        "serifFamily": {
+          "id": "Lora",
+          "url": "https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuyJDmKxemMeZ.woff2"
+        },
+        "sansSerifFamily": {
+          "id": "Wotfard",
+          "url": "/fonts/Wotfard/wotfard-regular-webfont.woff2"
+        },
+        "monospaceFamily": {
+          "id": "Fira Code",
+          "url": "https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVLxN87gsj0.woff2"
+        },
+        "displayFamily": {
+          "id": "Impact",
+          "url": "/fonts/impact.woff2"
+        },
+        "drawVariant": "regular",
+        "serifVariant": "regular",
+        "sansSerifVariant": "regular",
+        "monospaceVariant": "regular",
+        "displayVariant": "regular",
+        "textFillStyle": "solid",
+        "textFill": "#e5e7eb",
+        "textFillOpacity": 1,
+        "textStrokeStyle": "none",
+        "textStroke": "#111827",
+        "textStrokeWidth": 1,
+        "textStrokeOpacity": 1,
+        "textStrokeOverFill": false,
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "page:page",
+      "index": "a1xunDGV",
+      "typeName": "shape"
+    }
+  ],
+  "rootShapeIds": [
+    "shape:x-9tmdL6r13G7KgKZ9ZOK"
+  ],
+  "bindings": [],
+  "assets": []
+}

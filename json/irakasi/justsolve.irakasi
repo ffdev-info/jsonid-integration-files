@@ -1,0 +1,113 @@
+{
+  "schema": {
+    "schemaVersion": 2,
+    "sequences": {
+      "com.tldraw.store": 5,
+      "com.tldraw.asset": 1,
+      "com.tldraw.camera": 1,
+      "com.tldraw.document": 2,
+      "com.tldraw.instance": 25,
+      "com.tldraw.instance_page_state": 5,
+      "com.tldraw.page": 1,
+      "com.tldraw.instance_presence": 6,
+      "com.tldraw.pointer": 1,
+      "com.tldraw.shape": 4,
+      "com.tldraw.asset.bookmark": 2,
+      "com.tldraw.asset.image": 5,
+      "com.tldraw.asset.video": 5,
+      "com.tldraw.shape.group": 0,
+      "com.tldraw.shape.arrow": 5,
+      "com.tldraw.shape.camera": 0,
+      "com.tldraw.shape.frame": 4,
+      "com.tldraw.shape.geometry": 4,
+      "com.tldraw.shape.image": 5,
+      "com.tldraw.shape.path": 5,
+      "com.tldraw.shape.pointsPath": 5,
+      "com.tldraw.shape.polyLine": 5,
+      "com.tldraw.shape.richText": 4,
+      "com.tldraw.shape.text": 3,
+      "com.tldraw.shape.video": 3,
+      "com.tldraw.shape.web-embed": 4,
+      "com.tldraw.binding.arrow": 1,
+      "com.irakasi.animation": 0,
+      "com.irakasi.store": 1
+    }
+  },
+  "shapes": [
+    {
+      "x": -102.13671875,
+      "y": -87.0234375,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:MrzjkBEbWNW7MvEg5oZnc",
+      "type": "text",
+      "props": {
+        "w": 71.734375,
+        "text": "JustSolveIt",
+        "textScale": 1,
+        "lineHeight": 1.35,
+        "autoSize": true,
+        "textStroke": "#111827",
+        "textFill": "#e5e7eb",
+        "textStrokeOverFill": false,
+        "textStrokeStyle": "none",
+        "textStrokeOpacity": 1,
+        "textStrokeWidth": 1,
+        "textFillStyle": "solid",
+        "textFillOpacity": 1,
+        "font": "draw",
+        "drawFamily": {
+          "id": "Indie Flower",
+          "url": "https://fonts.gstatic.com/s/indieflower/v21/m8JVjfNVeKWVnh3QMuKkFcZla0GG1dKEDw.woff2"
+        },
+        "sansSerifFamily": {
+          "id": "Wotfard",
+          "url": "/fonts/Wotfard/wotfard-regular-webfont.woff2"
+        },
+        "serifFamily": {
+          "id": "Lora",
+          "url": "https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuyJDmKxemMeZ.woff2"
+        },
+        "monospaceFamily": {
+          "id": "Fira Code",
+          "url": "https://fonts.gstatic.com/s/firacode/v22/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sFVLxN87gsj0.woff2"
+        },
+        "displayFamily": {
+          "id": "Impact",
+          "url": "/fonts/impact.woff2"
+        },
+        "displayVariant": "regular",
+        "drawVariant": "regular",
+        "sansSerifVariant": "regular",
+        "serifVariant": "regular",
+        "monospaceVariant": "regular",
+        "textAlign": "start",
+        "pivotX": 8,
+        "pivotY": 10.796875,
+        "isAspectRatioLocked": false,
+        "visible": true,
+        "transparent": false,
+        "isFlippedHorizontally": false,
+        "isFlippedVertically": false,
+        "filter": null,
+        "mask": null,
+        "isMask": false,
+        "selectedHandleIds": [],
+        "keepStrokesRatio": false,
+        "textVerticalAlign": "middle",
+        "scaleX": 1,
+        "scaleY": 1
+      },
+      "parentId": "page:page",
+      "index": "a147msmV",
+      "typeName": "shape"
+    }
+  ],
+  "rootShapeIds": [
+    "shape:MrzjkBEbWNW7MvEg5oZnc"
+  ],
+  "bindings": [],
+  "assets": []
+}
